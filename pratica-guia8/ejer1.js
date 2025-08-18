@@ -29,10 +29,18 @@ const rl = readline.createInterface({
 
 // });
 
-//Ejercicio3
-rl.question("Ingrese un codigo generado:", (codigo)=>{
-  const ultimosDigitos=codigo.slice(-4);
-  console.log(`Los ultimos 4 digitos son: ${ultimosDigitos}`);
+// //Ejercicio3
+// rl.question("Ingrese un codigo generado:", (codigo)=>{
+//   const ultimosDigitos=codigo.slice(-4);
+//   console.log(`Los ultimos 4 digitos son: ${ultimosDigitos}`);
+
+//    rl.close();
+// })
+
+//Ejercicio4
+rl.question("Ingrese el mensaje:", (mensaje)=>{
+  const errorMensaje=mensaje.indexOf("error");
+   console.log(`La palabra error esta en: ${errorMensaje}`)
 
    rl.close();
 })
